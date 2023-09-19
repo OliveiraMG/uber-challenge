@@ -5,7 +5,9 @@ import com.amazonaws.services.simpleemail.AmazonSimpleEmailService;
 import com.amazonaws.services.simpleemail.model.*;
 import com.example.emailservice.adapters.EmailSenderGateaway;
 import com.example.emailservice.core.exceptions.EmailServiceException;
+import org.springframework.stereotype.Service;
 
+@Service
 public class SesEmailSender implements EmailSenderGateaway {
 
     private final AmazonSimpleEmailService amazonSimpleEmailService;
